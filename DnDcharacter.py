@@ -9,7 +9,7 @@ class Character:
         self.level = level
     
     def get_race(self):
-        """ generates random character race and associated traits """
+        """ generates random character race """
         races = {1: 'dwarf', 2: 'elf', 3: 'halfling', 4: 'human', 5: 'gnome'}
         x = random.randint(1,5)
         self.race = races[x]
@@ -45,10 +45,13 @@ class Character:
                 num += n
             abilities[key] = num
         print(self.name + "'s ability stats are:", abilities, '\n')
+    
+    def generate_random(self):
+        self.get_race()
+        self.get_alignment()
+        self.get_abilities()
 
 Siggy = Character('Sigrid')
-Siggy.get_race()
-Siggy.get_alignment()
-Siggy.get_abilities()
+Siggy.generate_random()
 
 

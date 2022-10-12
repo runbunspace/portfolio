@@ -4,11 +4,12 @@ generating a Dungeons and Dragons character
 import random
 
 class Character:
-    def __init__(self, name, level=1):
-        self.name = name
-        self.level = level
+    def __init__(self, race):
+        print(race, 'created at level 1')
+        self.race = race
+        self.level = 1
         self.proficiencies = []
-        self.languages = []
+        self.languages = ['Common']
         self.traits = []
     
     def get_race(self):
@@ -43,37 +44,47 @@ class Character:
             for n in temp:
                 num += n
             abilities[key] = num
+        self.abilities = abilities
         
     def generate_random(self):
         self.get_race()
-        print(self.name + "'s race is:", self.race, '\n')
         self.get_alignment()
-        print(self.name + "'s alignment is:", self.alignment, '\n')
         self.get_abilities()
-        print(self.name + "'s ability stats are:", abilities, '\n')
 
-Siggy = Character('Sigrid')
-Siggy.generate_random()
 
 class Dwarf(Character):
     def __init__(self):
-        self.race = 'dwarf'
+        super().__init__('dwarf')
         self.size = 'medium'
         self.speed = 25
-        self.proficiencies.append('battleaxe', 'light hammer', 'warhammer', 'stonecunning')
-        self.languages.append('Common', 'Dwarvish')
+        self.proficiencies.extend(['battleaxe', 'light hammer', 'warhammer', 'stonecunning'])
+        self.languages.append('Dwarvish')
         self.traits.append('darkvision')
+        self.subrace = input('enter subrace -- hill or mountain: ')
+        while self.subrace != 'hill' and self.subrace != 'mountain':
+            print('invalid entry')
+            self.subrace = input('enter subrace -- hill or mountain: ')
+        if self.subrace == 'mountain':
+            self.proficiencies.extend(['light armor', 'medium armor'])
+            print('the brawn of mountain dwarves grants proficiency with light and medium armor')
+        
     
     def dwarf_abilities(self):
         self.get_abilities()
-        abilities['constitution'] += 2
-        a = input('what is your dwarven subrace? enter 1 for hill, 2 for mountain')
-        if a == 1:
-            self.subrace = 'hill'
-            abilities['wisdom'] += 1
-        elif a == 2:
-            self.subrace = 'mountain'
-            abilities['strength'] += 2
+        print('generating ability scores...')
+        print(self.abilities)
+        self.abilities['constitution'] += 2
+        print('your dwarven hardiness grants +2 to your constitution')
+        if self.subrace == 'hill':
+            self.abilities['wisdom'] += 1
+            print('the deep intuition of hill dwarves grants +1 to your wisdom')
+        elif self.subrace == 'mountain':
+            self.abilities['strength'] += 2
+            print('the brawn of mountain dwarves grants +2 to your strength')
+        print('abilities are:', self.abilities)
+
+dwarf1 = Dwarf()
+dwarf1.dwarf_abilities()
     
 
 

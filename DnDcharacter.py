@@ -1,22 +1,46 @@
+# need to add class type/specials
+# need to define stat adjstments based on race/class type/specials
+
 """
-generating a Dungeons and Dragons character
+DnD character generator:
+instance = character_gen() 
+--> creates an instance of the class, sets character level to 1
+
+instance.gen()
+--> generates a dictionary of attributes with random values
+example dictionary: 
+{'name': 'Lael Brightbuckle', 'race': 'elf', 'level': 1, 'alignment': 'neutral evil', 
+'strength': 8, 'dexterity': 8, 'constitution': 14, 'intelligence': 5, 'wisdom': 13, 'charisma': 12}
 """
+
 import random
 
-class Character:
-    def __init__(self, race):
-        print(race, 'created at level 1')
-        self.race = race
-        self.level = 1
-        self.proficiencies = []
-        self.languages = ['Common']
-        self.traits = []
-    
+class character_gen:
+    def __init__(self):
+        level = {'level': 1}
+        self.level = level
+
+    def get_name(self):
+        """ generates character name """
+        first_names = {1: 'Helja', 2: 'Ilde', 3: 'Birael', 4: 'Thea', 
+                       5: 'Milo', 6: 'Lael', 7: 'Marci', 8: 'Wrenn', 
+                       9: 'Lorill', 10: 'Amaun'}
+        first = random.randint(1,10)
+        first = first_names[first]
+        last_names = {1: 'Toruun', 2: 'Manbroek', 3: 'Naldo', 4: 'Brushfellow', 
+                      5: 'Highthorne', 6: 'Navarro', 7: 'Faircloak', 8: 'Garreck', 
+                      9: 'Brightbuckle', 10: 'Saluzir'}
+        last = random.randint(1,10)
+        last = last_names[last]
+        name = {'name': first + ' ' + last}
+        self.name = name
+
     def get_race(self):
         """ generates random character race and associated traits """
         races = {1: 'dwarf', 2: 'elf', 3: 'halfling', 4: 'human', 5: 'gnome'}
         x = random.randint(1,5)
-        self.race = races[x]
+        race = {'race': races[x]}
+        self.race = race
         
     def get_alignment(self):
         """ generates random alignment """
@@ -26,7 +50,8 @@ class Character:
         alignment_morals = {1: 'good', 2: 'neutral', 3: 'evil'}
         morals = random.randint(1,3)
         morals = alignment_morals[morals]
-        self.alignment = ethics + ' ' + morals
+        alignment = {'alignment': ethics + ' ' + morals}
+        self.alignment = alignment
         
     def get_abilities(self):
         """ generates random ability scores """
@@ -45,13 +70,26 @@ class Character:
                 num += n
             abilities[key] = num
         self.abilities = abilities
-        
-    def generate_random(self):
+    
+    def gen(self):
+        self.get_name()
         self.get_race()
         self.get_alignment()
         self.get_abilities()
+        stats = {}
+        stats.update(self.name)
+        stats.update(self.race)
+        stats.update(self.level)
+        stats.update(self.alignment)
+        stats.update(self.abilities)
+        print(stats)
 
 
+
+player1 = character_gen()
+player1.gen()
+
+# this section under construction
 class Dwarf(Character):
     def __init__(self):
         super().__init__('dwarf')
@@ -83,8 +121,6 @@ class Dwarf(Character):
             print('the brawn of mountain dwarves grants +2 to your strength')
         print('abilities are:', self.abilities)
 
-dwarf1 = Dwarf()
-dwarf1.dwarf_abilities()
     
 
 

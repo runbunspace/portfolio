@@ -12,7 +12,9 @@ csv_files.ipynb: Jupyter Notebook project
     query MySQL db with python
     
     basic visualization using tableau
-****   
+****
+pyramid.py: prints a pyramid of hashes of height 1-8 from user input (similar to stairs)
+****
 snack.py: tally the calories in your snack
 ****
-stairs.py: prints a right-aligned staircase of height 1-8 from user input
+stairs.py: prints a right-aligned staircase of height 1-8 from user input (similar to pyramid)

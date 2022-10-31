@@ -1,6 +1,8 @@
 # portfolio
 DnDcharacter.py: create random DnD character stats; store in a dicionary
 ****
+change.py: find the lowest total coins to give correct change using a greedy algorithm
+****
 csv_files.ipynb: Jupyter Notebook project
 
     generate csv files from dictionaries

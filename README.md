@@ -19,6 +19,8 @@ dec_to_bin.py: convert decimal integer to binary
 ****
 pyramid.py: prints a pyramid of hashes of height 1-8 from user input (similar to stairs)
 ****
+simple_voter.py: input candidates, vote for candidates, print winner(s)
+****
 snack.py: tally the calories in your snack
 ****
 stairs.py: prints a right-aligned staircase of height 1-8 from user input (similar to pyramid)

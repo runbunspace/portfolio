@@ -1,5 +1,5 @@
 # portfolio
-DnDcharacter.py: create random DnD character stats; store in a dicionary
+DnDcharacter.py: create random DnD character stats, stored in a dicionary
 ****
 change.py: find the lowest total coins to give correct change using a greedy algorithm
 ****

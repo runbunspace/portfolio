@@ -15,6 +15,8 @@ csv_files.ipynb: Jupyter Notebook project
     
     basic visualization using tableau
 ****
+dec_to_bin.py: convert decimal integer to binary
+****
 pyramid.py: prints a pyramid of hashes of height 1-8 from user input (similar to stairs)
 ****
 snack.py: tally the calories in your snack

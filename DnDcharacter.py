@@ -51,6 +51,7 @@ class character_gen:
         morals = random.randint(1,3)
         morals = alignment_morals[morals]
         alignment = {'alignment': ethics + ' ' + morals}
+        if alignment = 'neutral neutral': alignment = 'true neutral'
         self.alignment = alignment
         
     def get_abilities(self):
@@ -82,7 +83,7 @@ class character_gen:
         stats.update(self.level)
         stats.update(self.alignment)
         stats.update(self.abilities)
-        print(stats)
+        self.stats = stats
 
 
 

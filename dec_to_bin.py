@@ -34,8 +34,8 @@ else:
     BIN.append(r)
     BIN.append(1)
     BIN.reverse()
-    bin = ''.join(str(x) for x in BIN)
+    bin = int(''.join(str(x) for x in BIN))
     print(f'{DEC} in binary is: ')
-    if DEC < 0: print(f'-{bin}')
+    if DEC < 0: print(-bin)
     else: print(bin)
 

@@ -21,6 +21,8 @@ pyramid.py: prints a pyramid of hashes of height 1-8 from user input (similar to
 ****
 readability.py: determine reading grade level of a string of text using the Coleman-Liau index
 ****
+scrabble.py: determines the Scrabble score of words inputted by the user, and declares the winner with the highest score
+****
 simple_survey.py: enter survey data and get top response
 ****
 simple_voter.py: input candidates, vote for candidates, print winner(s)

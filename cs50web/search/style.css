@@ -8,8 +8,7 @@ body {
 
 .linkdiv {
   background-color: #e8eaed;
-  margin-left: auto;
-  margin-right: 0; }
+  text-align: right; }
 
 #basic {
   text-align: center; }

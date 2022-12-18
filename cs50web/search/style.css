@@ -1,5 +1,7 @@
 body {
-  background-color: #202124; }
+  color: #9aa0a6;
+  background-color: #202124;
+  font-family: arial, sans-serif; }
 
 #basic {
   text-align: center; }
@@ -8,6 +10,32 @@ body {
   background-color: #202124;
   height: 44px;
   width: 640px;
+  margin-top: 20px;
+  margin-bottom: 8px;
   border: 1px solid #5f6368;
   box-shadow: none;
   border-radius: 24px; }
+
+#head {
+  color: #528b82;
+  font-size: 36px;
+  margin-left: 20px;
+  margin-bottom: 10px; }
+
+.form {
+  background-color: transparent;
+  padding: 20px;
+  border-top: 1px solid #5f638; }
+
+#top {
+  font-size: 24px; }
+
+.labels {
+  background-color: transparent;
+  width: 200px }
+
+.inputs {
+  background-color: #202124;
+  width: 570px;
+  border: 1px solid #5f638;
+  padding: 4px; }

@@ -3,7 +3,11 @@ body {
   font-family: arial, sans-serif; }
 
 .link {
+  color: #202124;
   text-align: right; }
+
+.linkdiv {
+  background-color: #e8eaed;
 
 #basic {
   text-align: center; }

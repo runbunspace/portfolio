@@ -6,6 +6,7 @@ body {
   color: #202124;
   background-color: #e8eaed;
   padding: 4px;
+  margin: 10px;
   float: right; }
 
 #basic {
@@ -31,7 +32,7 @@ body {
 .form {
   background-color: transparent;
   padding: 20px;
-  border-top: 1px solid #5f638; }
+  border-top: 1px solid #e8eaed; }
 
 #top {
   color: #e8eaed;
@@ -46,7 +47,8 @@ body {
   display: inline-block; }
 
 .inputdiv {
-  display: inline-block; }
+  display: inline-block; 
+  margin-bottom: 10px; }
 
 .inputs {
   color: #e8eaed; 
@@ -60,8 +62,8 @@ body {
 .submit {
   color: #e8eaed;
   background-color: #4d90fe;
-  text-align: right;
+  float: right;
   margin-top: 10px;
-  border: 1px solid #4d90fe;
+  border: none;
   box-shadow: none;
   border-radius: 2px; }

@@ -4,11 +4,11 @@ body {
 
 .link {
   color: #202124;
+  background-color: #e8eaed;
   text-align: right; }
 
 .linkdiv {
-  background-color: #e8eaed;
-  text-align: right; }
+  align: right; }
 
 #basic {
   text-align: center; }

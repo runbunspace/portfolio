@@ -1,2 +1,13 @@
 body {
-  background-color: #202124 }
+  background-color: #202124; }
+
+#basic {
+  text-align: center; }
+
+.searchBox {
+  background-color: #202124;
+  height: 44px;
+  width: 640px;
+  border: 1px solid #5f6368;
+  box-shadow: none;
+  border-radius: 24px; }

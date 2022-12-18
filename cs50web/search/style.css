@@ -28,17 +28,19 @@ body {
   border-top: 1px solid #5f638; }
 
 #top {
+  color: 3e8eaed;
   font-size: 24px; }
 
 .labels {
+  color: #e8eaed;
   background-color: transparent;
   width: 200px;
   display: inline-block; }
 
-.input {
+div {
   display: inline-block; }
 
-input {
+.inputs {
   color: #e8eaed; 
   background-color: #202124;
   height: 24px;

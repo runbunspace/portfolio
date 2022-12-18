@@ -6,7 +6,7 @@ body {
   text-align: center; }
 
 .searchBox {
-  color: #9aa0a6;
+  color: #e8eaed;
   background-color: #202124;
   height: 44px;
   width: 640px;
@@ -35,11 +35,14 @@ body {
   width: 200px;
   display: inline-block; }
 
+.input {
+  display: inline-block; }
+
 input {
-  width: 100%; 
+  color: #e8eaed; 
   background-color: #202124;
+  height: 24px;
   width: 570px;
-  display: inline-block;
-  border: 1px solid #5f638;
+  border: 1px solid #5f6368;
   box-shadow: none;
   padding: 4px; }

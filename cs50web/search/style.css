@@ -5,6 +5,7 @@ body {
 .link {
   color: #202124;
   background-color: #e8eaed;
+  padding: 4px;
   float: right; }
 
 #basic {
@@ -60,5 +61,7 @@ body {
   color: #e8eaed;
   background-color: #4d90fe;
   text-align: right;
-  margin-top: 10px; 
+  margin-top: 10px;
+  border: 1px solid #4d90fe;
+  box-shadow: none;
   border-radius: 2px; }

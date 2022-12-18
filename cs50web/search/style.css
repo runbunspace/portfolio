@@ -2,6 +2,9 @@ body {
   background-color: #202124;
   font-family: arial, sans-serif; }
 
+.link {
+  text-align: right; }
+
 #basic {
   text-align: center; }
 
@@ -28,13 +31,15 @@ body {
   border-top: 1px solid #5f638; }
 
 #top {
-  color: 3e8eaed;
-  font-size: 24px; }
+  color: #e8eaed;
+  font-size: 24px; 
+  margin-bottom: 10px; }
 
 .labels {
   color: #e8eaed;
   background-color: transparent;
   width: 200px;
+  margin-bottom: 10px;
   display: inline-block; }
 
 div {
@@ -48,3 +53,10 @@ div {
   border: 1px solid #5f6368;
   box-shadow: none;
   padding: 4px; }
+
+.submit {
+  color: #e8eaed;
+  background-color: #4d90fe;
+  text-align: right;
+  margin-top: 10px; 
+  border-radius: 2px;

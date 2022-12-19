@@ -42,7 +42,7 @@ body {
   width: 200px; }
 
 .link {
-  background-color: #e8eaed;
+  background-color: transparent;
   color: #202124;
   float: right;
   margin: 10px;

@@ -10,7 +10,7 @@ body {
   float: right; }
 
 #basic {
-  float: center; }
+  text-align: center; }
 
 .searchBox {
   color: #e8eaed;

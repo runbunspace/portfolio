@@ -15,7 +15,7 @@ body {
   min-width: 54px;
   text-align: center; }
 
-.link {
+#link {
   background-color: #e8eaed;
   color: #202124;
   float: right;
@@ -29,8 +29,7 @@ body {
   box-shadow: none;
   color: #e8eaed;
   height: 44px;
-  margin-bottom: 8px;
-  margin-top: 20px;
+  margin: 20px auto;
   text-align: center;
   width: 640px; }
 

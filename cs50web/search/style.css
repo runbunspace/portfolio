@@ -59,15 +59,18 @@ body {
   box-shadow: none;
   padding: 4px; }
 
+#submitdiv {
+  background-color: transparent;
+  width: 770px;
+  margin-top: 10px; }
+
 .submit {
   color: #e8eaed;
   background-color: #4d90fe;
   font-size: 10px;
   font-weight: bold;
-  width: 770px;
   float: right;
   padding: 10px;
-  margin-top: 10px;
   border: none;
   box-shadow: none;
   border-radius: 2px; }

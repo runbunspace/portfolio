@@ -5,11 +5,16 @@
         <link rel="stylesheet" href="basicStyle.css" />
     </head>
     <body>
-        <div id="link"><a href="advanced.html">Advanced Search</a><br>
-        <a href="image.html">Image Search</a></div>
+        <div id="topBox" class="transparent">
+            <div class="link transparent"><a href="image.html">Image Search</a></div>
+            <div class="link transparent"><a href="advanced.html">Advanced Search</a></div>
+        </div>
+        
         <form action="https://www.google.com/search">
-            <center><input type="text" id="searchBox" name="q"><br>
-            <input  type="submit" class="button" name="btnk" value="Google Search">
+            <div id="inputBox" class="transparent">
+                <input type="text" id="searchBox" name="q"><br>
+            </div>
+            <center><input  type="submit" class="button" name="btnk" value="Google Search">
             <input type="submit" class="button" name="btni" value="I'm Feeling Lucky"</center>
         </form>
     </body>

@@ -1,8 +1,11 @@
+a {
+  margin: 10px; }
+
 body {
   background-color: #202124;
   font-family: arial, sans-serif; }
 
-#button {
+.button {
   background-color: #303134;
   border: 1px solid #303134;
   border-radius: 4px;
@@ -14,6 +17,9 @@ body {
   height: 36px;
   min-width: 54px;
   text-align: center; }
+
+form {
+  margin-top: 300px; }
 
 #link {
   background-color: #e8eaed;

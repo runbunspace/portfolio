@@ -5,12 +5,19 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <a class="link" href="index.html">Google Search</a><br>
+        <div id="topBox" class="transparent">
+            <a class="link transparent" href="index.html">Google Search</a><br>
+        </div>
+        
         <form id="basic" action="https://www.google.com/search">
-            <input type="text" class="searchBox" name="q">
+            <div id="inputBox" class="transparent">
+                <input type="text" class="searchBox" name="q">
+            </div>
             <input type="hidden" name="hl" value="en">
             <input type="hidden" name="tbm" value="isch"><br>
-            <input type="submit" value="Google Image Search">
+            <center>
+                <input type="submit" class="button" value="Google Image Search">
+            </center>
         </form>
     </body>
 </html>
